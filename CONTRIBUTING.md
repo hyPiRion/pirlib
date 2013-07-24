@@ -17,7 +17,7 @@ that commit messages keeps the following style:
 
 As an example, this would be preferable:
 
-```shell
+```bash
 # Fork the project off Github
 $ git clone git@github.com:your-username-here/pirlib.git
 $ cd pirlib
