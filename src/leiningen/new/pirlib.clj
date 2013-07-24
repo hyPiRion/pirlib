@@ -1,5 +1,6 @@
 (ns leiningen.new.pirlib
-  (:use [leiningen.new.templates :only [renderer name-to-path ->files]]))
+  (:require [leiningen.new.templates :refer [renderer name-to-path ->files year]]
+            [leiningen.core.main :as main]))
 
 (def render (renderer "pirlib"))
 
@@ -7,6 +8,11 @@
   "FIXME: write documentation"
   [name]
   (let [data {:name name
-              :sanitized (name-to-path name)}]
+              :sanitized (name-to-path name)
+              :year (year)}
+        render #(render % data)]
+    (main/info (str "Generating a pirlib named " name "..."))
     (->files data
-             ["src/{{sanitized}}/foo.clj" (render "foo.clj" data)])))
+             ["LICENSE" (render "LICENSE")]
+             ["CONTRIBUTING.md" (render "CONTRIBUTING.md")]
+             ["src/{{sanitized}}/foo.clj" (render "foo.clj")])))
