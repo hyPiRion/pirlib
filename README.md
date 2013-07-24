@@ -71,5 +71,8 @@ insights in how one can improve or enhance the software at hand.
 
 Copyright © 2013 Jean Niklas L'orange
 
-Distributed under the Eclipse Public License, version 1.0. You can find a copy in
-the root of this repository with the name `LICENSE`.
+This work is distributed under a
+[Creative Commons Attribution-ShareAlike 3.0 Unported License][license]. You can
+find a copy in the root of this repository with the name `LICENSE`.
+
+[license]: http://creativecommons.org/licenses/by-sa/3.0/
