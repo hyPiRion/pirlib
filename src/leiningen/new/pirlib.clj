@@ -1,5 +1,5 @@
 (ns leiningen.new.pirlib
-  (:require [leiningen.new.templates :refer [renderer name-to-path ->files year]]
+  (:require [leiningen.new.templates :as t]
             [leiningen.core.main :as main]))
 
 (defn parse-opts [opt-list]
@@ -16,16 +16,20 @@
 (defn pirlib
   "FIXME: write documentation"
   [name & opt-list]
-  (let [render (renderer "pirlib")
+  (let [render (t/renderer "pirlib")
         {username ":username" :as opts} (parse-opts opt-list)
-        data {:name name
-              :sanitized (name-to-path name)
+        main-ns (t/sanitize-ns name)
+        data {:raw-name name
+              :name (t/project-name name)
+              :nested-dirs (t/name-to-path name)
+              :namespace main-ns
               :username username
-              :year (year)}
+              :year (t/year)}
         render #(render % data)]
     (expect-keys opts ["username"])
     (main/info (str "Generating a pirlib named " name "..."))
-    (->files data
+    (t/->files data
              ["LICENSE" (render "LICENSE")]
              ["CONTRIBUTING.md" (render "CONTRIBUTING.md")]
-             ["src/{{sanitized}}/foo.clj" (render "foo.clj")])))
+             ["src/{{nested-dirs}}/main.clj" (render "main.clj")]
+             ["test/{{nested-dirs}}/main.clj" (render "test.clj")])))
