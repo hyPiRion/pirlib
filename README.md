@@ -7,7 +7,7 @@ A Leiningen template for hyPiRion's preferred default settings.
 With Leiningen 2.0 or higher, simply say
 
 ```shell
-$ lein new pirlib name-of-new-project username
+$ lein new pirlib name-of-new-project :username your-username
 ```
 
 and you have a Clojure library setup which hyPiRion prefer to use.
@@ -23,9 +23,15 @@ This template consist of the following:
   file an issue (properly).
 * A `CHANGES.md` file, which is a changelog-file and can be used as a TODO-file
   for specific versions.
+* A `README.md` file, which mainly contain a TODO list of things you should fill
+  in within the README before deploying the first version. It also contain
+  License information along with both a hyperlink and a reference to the
+  `LICENSE` file.
 * A `.gitignore` file, including common backup files like emacs backup files and
   vim swap files.
 * A `.travis.yml` file, for a very standard Clojure Travis-CI setup.
+* An empty `main.clj` file and an empty `test/main.clj` file, with only their
+  namespaces declarations inside.
 
 And it assumes
 
