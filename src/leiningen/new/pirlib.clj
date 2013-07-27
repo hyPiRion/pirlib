@@ -29,8 +29,10 @@
     (expect-keys opts ["username"])
     (main/info (str "Generating a pirlib named " name "..."))
     (t/->files data
-             ["LICENSE" (render "LICENSE")]
-             ["CONTRIBUTING.md" (render "CONTRIBUTING.md")]
-             ["src/{{nested-dirs}}/main.clj" (render "main.clj")]
-             ["test/{{nested-dirs}}/test/main.clj" (render "test.clj")]
-             ["project.clj" (render "project.clj")])))
+               ["LICENSE" (render "LICENSE")]
+               ["CONTRIBUTING.md" (render "CONTRIBUTING.md")]
+               ["README.md" (render "README.md")]
+               ["src/{{nested-dirs}}/main.clj" (render "main.clj")]
+               ["test/{{nested-dirs}}/test/main.clj" (render "test.clj")]
+               ["project.clj" (render "project.clj")]
+               [".gitignore" (render "gitignore")])))
