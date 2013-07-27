@@ -31,8 +31,9 @@
     (main/info (str "Generating a pirlib named " name
                     " in the folder " project-name "."))
     (t/->files data
-               ["LICENSE" (render "LICENSE")]
+               ["CHANGES.md" (render "CHANGES.md")]
                ["CONTRIBUTING.md" (render "CONTRIBUTING.md")]
+               ["LICENSE" (render "LICENSE")]
                ["README.md" (render "README.md")]
                ["src/{{nested-dirs}}/main.clj" (render "main.clj")]
                ["test/{{nested-dirs}}/test/main.clj" (render "test.clj")]
