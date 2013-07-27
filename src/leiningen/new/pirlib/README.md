@@ -2,9 +2,16 @@
 
 TODO: A Clojure library designed to ... well, that part is up to you.
 
-## Usage
+## (Subsections go here)
 
-TODO
+TODO:
+* What does the library do?
+* Why did you write it (or didn't use an existing solution)?
+* Who should be using it, and for what reasons?
+* How should it be used (how to build it, how to configure it, how to run it and get started)?
+* Where can additional information be found? (typically doc/tutorial.md)
+From [Don't be a jerk: Write documentation](http://ferd.ca/don-t-be-a-jerk-write-documentation.html)
+by Frederic Trottier-Hebert.
 
 ## License
 
