@@ -32,4 +32,5 @@
              ["LICENSE" (render "LICENSE")]
              ["CONTRIBUTING.md" (render "CONTRIBUTING.md")]
              ["src/{{nested-dirs}}/main.clj" (render "main.clj")]
-             ["test/{{nested-dirs}}/main.clj" (render "test.clj")])))
+             ["test/{{nested-dirs}}/test/main.clj" (render "test.clj")]
+             ["project.clj" (render "project.clj")])))
