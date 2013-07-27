@@ -1,11 +1,15 @@
 # Contributing
 
+Hey there,
+
 There's not much to contribute to within Pirlib, to be honest. If you want to
 change something which alters the actual setup (say, changing the license or to
 remove travis-ci or stuff like that), you're better off making a clone of this
 library, modify the changes and make your own template (or put forward a good
 argument for why I should change it). If there are minor errors in the template,
 I'd love to get those fixed.
+
+## Patches
 
 Patches are preferred as Github pull requests. Use topic branches instead of
 commiting directly to master, to avoid unnecessary merge hassle. It is preferred

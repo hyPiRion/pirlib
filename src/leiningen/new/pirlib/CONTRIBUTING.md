@@ -10,8 +10,8 @@ can merge in your patch faster, or understand and fix the bug you found more
 rapidly.
 
 If you're unsure whether you follow the guidelines or not, just send it. We're
-not picky, and as mentioned earlier, these guidelines is not there to scare away
-new contributors.
+not picky, and as mentioned earlier, these guidelines is not there to scare you
+away.
 
 ## Issues
 

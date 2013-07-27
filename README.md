@@ -65,7 +65,7 @@ sometimes boring, but increasing the bus factor is something which can only make
 software better, easier to use, and, perhaps most importantly, give valuable
 insights in how one can improve or enhance the software at hand.
 
-[codox]: https://www.github.com/weavejester/codox "I need to check this link."
+[codox]: https://www.github.com/weavejester/codox "Codox, by Weavejester."
 
 ## License
 
