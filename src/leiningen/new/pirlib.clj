@@ -2,8 +2,6 @@
   (:require [leiningen.new.templates :refer [renderer name-to-path ->files year]]
             [leiningen.core.main :as main]))
 
-(def render (renderer "pirlib"))
-
 (defn parse-opts [opt-list]
   (when (odd? (count opt-list))
     (main/abort
@@ -18,7 +16,8 @@
 (defn pirlib
   "FIXME: write documentation"
   [name & opt-list]
-  (let [{username ":username" :as opts} (parse-opts opt-list)
+  (let [render (renderer "pirlib")
+        {username ":username" :as opts} (parse-opts opt-list)
         data {:name name
               :sanitized (name-to-path name)
               :username username
