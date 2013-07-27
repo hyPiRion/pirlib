@@ -18,16 +18,18 @@
   [name & opt-list]
   (let [render (t/renderer "pirlib")
         {username ":username" :as opts} (parse-opts opt-list)
+        project-name (t/project-name name)
         main-ns (t/sanitize-ns name)
         data {:raw-name name
-              :name (t/project-name name)
+              :name project-name
               :nested-dirs (t/name-to-path name)
               :namespace main-ns
               :username username
               :year (t/year)}
         render #(render % data)]
     (expect-keys opts ["username"])
-    (main/info (str "Generating a pirlib named " name "..."))
+    (main/info (str "Generating a pirlib named " name
+                    " in the folder " project-name "."))
     (t/->files data
                ["LICENSE" (render "LICENSE")]
                ["CONTRIBUTING.md" (render "CONTRIBUTING.md")]
