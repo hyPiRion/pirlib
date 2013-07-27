@@ -73,6 +73,7 @@ Copyright © 2013 Jean Niklas L'orange
 
 This work is distributed under a
 [Creative Commons Attribution-ShareAlike 3.0 Unported License][license]. You can
-find a copy in the root of this repository with the name `LICENSE`.
+find a copy in the root of this repository with the name `LICENSE`. All files
+this Leiningen template generates is in the public domain.
 
 [license]: http://creativecommons.org/licenses/by-sa/3.0/
