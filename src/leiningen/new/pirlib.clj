@@ -37,4 +37,5 @@
                ["src/{{nested-dirs}}/main.clj" (render "main.clj")]
                ["test/{{nested-dirs}}/test/main.clj" (render "test.clj")]
                ["project.clj" (render "project.clj")]
-               [".gitignore" (render "gitignore")])))
+               [".gitignore" (render "gitignore")]
+               ["doc/tutorial.md" (render "tutorial.md")])))
