@@ -1,6 +1,9 @@
 # pirlib
 
-A Leiningen template for hyPiRion's preferred default settings.
+A Leiningen template for hyPiRion's preferred default settings. This project
+is very stable, and changes shouldn't modify the library setup too much.
+Whenever a new project is made with this template, it will use the latest
+release, which has the features mentioned in this README.
 
 ## Usage
 
@@ -24,7 +27,7 @@ This template consist of the following:
 * A `CHANGES.md` file, which is a changelog-file and can be used as a TODO-file
   for specific versions.
 * A `README.md` file, which mainly contain a TODO list of things you should fill
-  in within the README before deploying the first version. It also contain
+  in within the README before deploying the first version. It also contains
   License information along with both a hyperlink and a reference to the
   `LICENSE` file.
 * A `.gitignore` file, including common backup files like emacs backup files and
@@ -82,4 +85,4 @@ This work is distributed under a
 find a copy in the root of this repository with the name `LICENSE`. All files
 this Leiningen template generates is in the public domain.
 
-[license]: http://creativecommons.org/licenses/by-sa/3.0/
+[license]: hhttp://creativecommons.org/licenses/by-sa/3.0/
